@@ -1,0 +1,515 @@
+:root{
+  --bg: #ffeb99;
+  --ink: #111;
+  --card: #fff;
+  --line: rgba(0,0,0,0.35);
+}
+
+/* ===== 기본 ===== */
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{
+  margin:0;
+  font-family: "Gowun Dodum", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+section{
+  scroll-margin-top: 80px;
+}
+
+/* ===== Navbar ===== */
+.navbar{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-link:hover,
+.nav-link.active{
+  color: #ffcc00 !important;
+}
+
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-title{
+  display: inline-block;
+  padding: 12px ;
+  background: var(--bg);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.05;
+  border-right: 1px solid var(--line);
+}
+
+/* ===== Section 공통 ===== */
+.section{
+  position: relative;
+  min-height: 720px;
+  padding: 70px 64px;
+  background: var(--bg);
+}
+
+.section-title{
+  font-size: 46px;
+  margin-bottom: 18px;
+}
+
+/* ===== Hero ===== */
+.hero{
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-bg,
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+}
+
+.hero-bg{
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay{
+  background: rgba(255,235,153,.35);
+}
+
+.hero-content{
+  position: relative;
+  z-index: 2;
+  padding: 70px 64px;
+  max-width: 980px;
+}
+
+.hero-title{
+  font-size: 60px;
+  margin-bottom: 24px;
+}
+
+.hero-text{
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* ===== About ===== */
+.about{
+  position: relative;
+  overflow: hidden;
+}
+
+.about-bg,
+.about-overlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+}
+
+.about-bg{
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.about-overlay{
+  background: rgba(255,235,153,.55);
+  z-index: 1;
+}
+
+.about-inner{
+  position: static;   
+  z-index: 2;
+}
+
+.about-titlebox{
+  position: absolute;
+  left: 64px;
+  bottom: 12%;        
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+/* ===== Age ===== */
+.age{
+  position: relative;
+  overflow: visible;
+}
+
+.age-bg,
+.age-overlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.age-bg{
+  height: 10%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.age-overlay{
+  height: 10%;
+  background: rgba(255,235,153,.55);
+  z-index: 0;
+}
+
+.age-inner{
+  position: relative;
+  z-index: 2;
+}
+
+.age-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.age-label{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.age-illust{
+  font-size: 56px;
+}
+
+/* ===== 카드 ===== */
+.img-card{
+  display: block;
+  height: 100%;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.img-card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.img-card-caption{
+  padding: 12px 14px;
+  font-weight: 700;
+}
+
+/* ===== Modal  ===== */
+.modal{
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+  pointer-events: none; 
+}
+
+.modal:target{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.modal-backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+.modal-panel{
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  width: min(860px, calc(100% - 48px));
+  margin: 100px auto;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.15);
+  padding: 22px;
+  pointer-events: auto;
+}
+
+.modal-panel-wide{
+  width: min(1040px, calc(100% - 48px));
+}
+
+.modal-close{
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 28px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+/* ===== Modal 내부 ===== */
+.detail-line{
+  height: 2px;
+  background: rgba(0,0,0,.15);
+  margin: 10px 0 16px;
+}
+
+.two-col{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.detail-img{
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.12);
+}
+
+/* ===== Community */
+.comm-page{
+  min-height: 100vh;
+  background: #ffeb99;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.comm-wrap{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 28px 22px 60px;
+}
+
+.comm-page-title{
+  font-size: 28px;
+  margin: 18px 0 18px;
+  letter-spacing: -0.2px;
+}
+
+.comm-card{
+  background: #fff;
+  border-radius: 12px;
+  padding: 44px 56px 36px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.05);
+}
+
+.comm-card-title{
+  font-size: 26px;
+  margin: 0 0 26px;
+}
+
+/* ===== 글쓰기 영역 ===== */
+.comm-write{
+  margin-bottom: 26px;
+  padding-bottom: 18px;
+}
+
+.comm-write-title{
+  font-size: 18px;
+  margin: 0;
+}
+
+.comm-hr{
+  border: 0;
+  border-top: 1px solid #111;
+  margin: 10px 0 12px;
+  opacity: .7;
+}
+
+.comm-help{
+  font-size: 14px;
+  color: #606060;
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.comm-textarea{
+  width: 100%;
+  height: 110px;
+  resize: none;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  outline: none;
+}
+
+.comm-textarea:focus{
+  border-color: rgba(0,0,0,.45);
+}
+
+.comm-actions{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.comm-send{
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+.comm-send:active{
+  transform: translateY(1px);
+}
+
+/* ===== 목록 ===== */
+.comm-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comm-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 12px 0;
+  border-bottom: 2px solid #111;
+  text-decoration: none;
+  color: #111;
+}
+
+.comm-text{
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.comm-date{
+  font-size: 14px;
+  opacity: 0.9;
+  flex: 0 0 auto;
+}
+
+.comm-pager{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.comm-pagebtn{
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  padding: 2px 4px;
+}
+
+.comm-pagebtn.is-active{
+  font-weight: 700;
+  border-bottom: 2px solid #111;
+}
+
+.post-list li{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.end-bg,
+.end-overlay{
+  position: absolute;
+  inset: 0;
+}
+
+.end-bg{
+  background-size: cover;
+  background-position: center;
+}
+
+.end-overlay{
+  background: rgba(255,235,153,.55);
+}
+
+.end-inner{
+  position: relative;
+  z-index: 2;
+  text-align: right;
+}
+
+
+.sns{
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.sns-btn{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+/* ===== End 섹션 SNS 큰 아이콘 ===== */
+.sns-icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+  margin: 8px 0;
+
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.15);
+
+  font-size: 48px;   /* 🔑 아이콘 크기 */
+  color: #111;
+  text-decoration: none;
+
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.sns-icon:hover,
+.age-btn:hover,
+.img-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+
+.sns-icon.youtube{ color: #ff0000; }
+.sns-icon.instagram{ color: #e1306c; }
+.sns-icon.blog{ color: #111; }
+

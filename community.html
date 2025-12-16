@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>todayplay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
+      <div class="container-fluid px-4 nav-h">
+        <a class="brand-title" href="index.html">오늘<br>놀자!</a>
+
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">오늘 놀자!</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">웹페이지 소개</a></li>
+          <li class="nav-item"><a href="age.html" class="nav-link">오늘 뭐하고 놀까?</a></li>
+          <li class="nav-item"><a href="issue.html" class="nav-link">오늘의 놀이 이슈</a></li>
+          <li class="nav-item"><a href="community.html" class="nav-link active" aria-current="page">오늘은 뭘 했냐면</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== 커뮤니티 ===== -->
+   <main class="comm-page">
+    <div class="comm-wrap">
+      <h1 class="comm-page-title">오늘은 뭘 했냐면</h1>
+
+      <section class="comm-card">
+        <h2 class="comm-card-title">놀이 수다</h2>
+
+        <!-- ✅ 글쓰기 영역 -->
+        <div class="comm-write">
+          <h3 class="comm-write-title">후기 남기기</h3>
+          <hr class="comm-hr">
+          <p class="comm-help">
+            오늘 아이와 했던 놀이를 짧게 기록해보세요.<br>
+            준비물, 반응, 꿀팁까지 남기면 다음 보호자에게 큰 도움이 됩니다.
+          </p>
+
+          <textarea class="comm-textarea" placeholder="후기를 입력하세요..."></textarea>
+
+          <div class="comm-actions">
+            <!-- 실제 저장은 서버/JS가 필요하니 우선 UI 버튼만 -->
+            <button type="button" class="comm-send">SEND</button>
+          </div>
+        </div>
+
+        <!-- ✅ 목록 영역 -->
+        <ol class="comm-list">
+          <li class="comm-row">
+            <a class="comm-link" href="#">
+              <span class="comm-text">1. 실내 놀이 후기</span>
+              <span class="comm-date">25.09.11</span>
+            </a>
+          </li>
+
+          <li class="comm-row">
+            <a class="comm-link" href="#">
+              <span class="comm-text">2. 아이들이 참 좋아하네요 ^^</span>
+              <span class="comm-date">25.08.21</span>
+            </a>
+          </li>
+
+          <li class="comm-row">
+            <a class="comm-link" href="#">
+              <span class="comm-text">3. 비가 많이 오는 날</span>
+              <span class="comm-date">25.08.15</span>
+            </a>
+          </li>
+
+          <li class="comm-row">
+            <a class="comm-link" href="#">
+              <span class="comm-text">4. 즐거운 하루</span>
+              <span class="comm-date">25.08.09</span>
+            </a>
+          </li>
+        </ol>
+
+        <nav class="comm-pager" aria-label="페이지 이동">
+          <a class="comm-pagebtn is-active" href="#">1</a>
+          <a class="comm-pagebtn" href="#">2</a>
+          <a class="comm-pagebtn" href="#">3</a>
+          <a class="comm-pagebtn" href="#">4</a>
+        </nav>
+      </section>
+    </div>
+  </main>
+  <!-- 풋터 -->
+  <footer class="text-center">
+    <div class="container text-center">
+      <p class="mb-2">
+        </p>
+
+      <p><strong>오늘 놀자 !</strong></p>
+      <p class="d-inline-block m-0">010-1234-5678</p>
+      <p class="d-inline-block px-3 m-0">·</p>
+      <p class="d-inline-block m-0">todayplay@todayplay.ac.kr</p>
+
+      <p class="mt-1 mb-4 text-black-50">
+        Copyright <i class="bi bi-c-circle"></i> 2025 Designed by 조서영
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

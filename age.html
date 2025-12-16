@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>todayplay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
+      <div class="container-fluid px-4 nav-h">
+        <a class="brand-title" href="index.html">오늘<br>놀자!</a>
+
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">오늘 놀자!</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">웹페이지 소개</a></li>
+          <li class="nav-item"><a href="age.html" class="nav-link active" aria-current="page">오늘 뭐하고 놀까?</a></li>
+          <li class="nav-item"><a href="issue.html" class="nav-link">오늘의 놀이 이슈</a></li>
+          <li class="nav-item"><a href="community.html" class="nav-link">오늘은 뭘 했냐면</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== 연령별 추천 ===== -->
+  <section id="sec-age" class="section age" style="margin-top: 70px;">
+    <div class="age-bg" style="background-image:url('image/image (8).png');"></div>
+    <div class="age-overlay"></div>
+
+    <div class="container age-content">
+      <h2 class="section-title">오늘 뭐하고 놀까?</h2>
+      <h3>연령별 카드를 클릭해보세요!</h3>
+
+      <div class="row g-4 mt-4">
+        <div class="col-6 col-lg-3">
+          <a class="age-btn" href="#modal-age-02">
+            <div class="age-label">~만 2세</div>
+            <div class="age-illust">👶</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a class="age-btn" href="#modal-age-35">
+            <div class="age-label">3~5세</div>
+            <div class="age-illust">🧒</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a class="age-btn" href="#modal-age-68">
+            <div class="age-label">6~8세</div>
+            <div class="age-illust">🧍‍♂️</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a class="age-btn" href="#modal-age-9">
+            <div class="age-label">9세~</div>
+            <div class="age-illust">📚</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 만 2세 ===== -->
+  <section id="modal-age-02" class="modal">
+    <a class="modal-backdrop" href="#sec-age"></a>
+    <div class="modal-panel">
+      <a class="modal-close" href="#sec-age">×</a>
+      <h3>~만 2세 놀이</h3>
+      <p>하단 놀이 카드를 선택해보세요!</p>
+      <div class="detail-line"></div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-sense-02">
+            <img src="image/image-2-1.jpg" alt="">
+            <div class="img-card-caption">감각자극놀이</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-sound-02">
+            <img src="image/image-2-2.jpeg" alt="">
+            <div class="img-card-caption">소리놀이</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-body-02">
+            <img src="image/image-2-3.png" alt="">
+            <div class="img-card-caption">신체놀이</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3~5세 ===== -->
+  <section id="modal-age-35" class="modal">
+    <a class="modal-backdrop" href="#sec-age"></a>
+    <div class="modal-panel">
+      <a class="modal-close" href="#sec-age">×</a>
+      <h3>3~5세 놀이</h3>
+      <p>하단 놀이 카드를 선택해보세요!</p>
+      <div class="detail-line"></div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-sense-35">
+            <img src="image/image (10).png" alt="">
+            <div class="img-card-caption">감각놀이</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-roleplay">
+            <img src="image/image (5).png" alt="">
+            <div class="img-card-caption">역할놀이</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-indoor-35">
+            <img src="image/image (8).png" alt="">
+            <div class="img-card-caption">실내 코스</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6~8세 ===== -->
+  <section id="modal-age-68" class="modal">
+    <a class="modal-backdrop" href="#sec-age"></a>
+    <div class="modal-panel">
+      <a class="modal-close" href="#sec-age">×</a>
+      <h3>6~8세 놀이</h3>
+      <p>하단 놀이 카드를 선택해보세요!</p>
+      <div class="detail-line"></div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-plant-68">
+            <img src="image/image-6-1.png" alt="">
+            <div class="img-card-caption">식물기르기</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-coding-68">
+            <img src="image/image-6-2.jpg" alt="">
+            <div class="img-card-caption">코딩게임</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-craft-68">
+            <img src="image/image (11).png" alt="">
+            <div class="img-card-caption">만들기 놀이</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 9세 이상 ===== -->
+  <section id="modal-age-9" class="modal">
+    <a class="modal-backdrop" href="#sec-age"></a>
+    <div class="modal-panel">
+      <a class="modal-close" href="#sec-age">×</a>
+      <h3>9세 이상 놀이</h3>
+      <p>하단 놀이 카드를 선택해보세요!</p>
+      <div class="detail-line"></div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-tradition-9">
+            <img src="image/image-9-1.jpg" alt="">
+            <div class="img-card-caption">전래놀이</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-escape-9">
+            <img src="image/image-9-2.jpg" alt="">
+            <div class="img-card-caption">방탈출</div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <a class="img-card h-100" href="#modal-park-9">
+            <img src="image/image-9-3.jpg" alt="">
+            <div class="img-card-caption">놀이공원</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 하위 모달들 ===== -->
+  <section id="modal-sense-02" class="modal">
+    <a class="modal-backdrop" href="#modal-age-02"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-02">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image-2-1.jpg" alt="감각자극놀이">
+        </div>
+        <div class="two-right">
+          <h3>감각자극놀이</h3>
+          <div class="detail-line"></div>
+          <p>
+            만 2세 아이는 촉감과 소리, 움직임을 통해 세상을 이해합니다.<br><br>
+            만지고 두드리고 흔들어보는 단순한 반복 놀이로 안정감과 호기심을 함께 키울 수 있습니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>아이의 반응에 맞춰 천천히 말로 설명해 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-sound-02" class="modal">
+    <a class="modal-backdrop" href="#modal-age-02"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-02">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image-2-2.jpeg" alt="소리놀이">
+        </div>
+        <div class="two-right">
+          <h3>소리놀이</h3>
+          <div class="detail-line"></div>
+          <p>
+            소리 놀이는 아이가 주변의 소리에 관심을 갖고 반응하도록 돕는 놀이입니다.<br><br>
+            악기 소리, 일상 소리, 말소리를 따라 해보며 청각 자극과 언어 인식이 함께 발달합니다.<br><br>
+            소리를 내고 반응하는 경험은 의사소통의 첫 단계가 됩니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>같은 소리를 여러 번 반복해 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-body-02" class="modal">
+    <a class="modal-backdrop" href="#modal-age-02"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-02">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image-2-3.png" alt="신체놀이">
+        </div>
+        <div class="two-right">
+          <h3>신체놀이</h3>
+          <div class="detail-line"></div>
+          <p>
+            신체 놀이는 아이가 자신의 신체를 인식하는 데 중요한 놀이입니다. <br><br>
+            기어가기, 밀기, 잡기 같은 동작을 통해 대근육과 소근육이 자연스럽게 발달합니다.<br>
+            움직임을 통해 에너지를 해소하며 정서적 안정감도 함께 얻을 수 있습니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>안전한 공간에서 자유롭게 움직이게 해주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-sense-35" class="modal">
+    <a class="modal-backdrop" href="#modal-age-35"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-35">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image (10).png" alt="감각놀이">
+        </div>
+        <div class="two-right">
+          <h3>감각놀이</h3>
+          <div class="detail-line"></div>
+          <p>
+            감각 놀이는 아이의 호기심을 자극하고 탐색 욕구를 충족시키는 놀이입니다.<br><br>
+            모래, 물, 촉감 재료를 활용해 손으로 직접 만지고 변화를 관찰하며 집중력이 자랍니다.<br><br>
+            놀이 과정 자체가 하나의 경험이 되어 창의적인 사고로 이어집니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>결과보다 과정에 집중하며 아이의 표현을 존중해 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-roleplay" class="modal">
+    <a class="modal-backdrop" href="#modal-age-35" aria-label="배경 클릭 시 닫기"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-35" aria-label="닫기">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image (5).png" alt="역할놀이 이미지" />
+        </div>
+        <div class="two-right">
+          <h3 class="detail-title">역할놀이</h3>
+          <div class="detail-line"></div>
+          <p class="detail-text">
+            역할놀이는 아이가 일상에서 경험한 상황을 바탕으로  
+            다른 사람의 입장을 상상하고 말과 행동으로 표현해 보는 놀이입니다.<br><br>
+            병원, 가게, 학교처럼 익숙한 장면을 재현하며  
+            자연스럽게 언어 표현력이 자라고,  
+            차례를 기다리거나 규칙을 지키는 사회성도 함께 발달합니다.<br><br>
+            역할을 바꿔가며 놀이하는 과정에서  
+            아이는 자신의 감정뿐 아니라 타인의 감정도 이해하게 됩니다.
+          </p>
+          <p class="detail-text">
+            <strong>추천 포인트</strong><br>
+            정해진 대본보다는 아이의 상상에 맞춰 반응해 주세요.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-indoor-35" class="modal">
+    <a class="modal-backdrop" href="#modal-age-35"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-35">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image (8).png" alt="실내 코스">
+        </div>
+        <div class="two-right">
+          <h3>실내 코스</h3>
+          <div class="detail-line"></div>
+          <p>
+            실내 코스 놀이는 공간을 활용해 아이가 몸과 생각을 함께 쓰는 놀이입니다. <br><br>
+            쿠션, 테이프, 의자를 활용해 간단한 동선을 만들며 문제 해결력을 기를 수 있습니다.<br><br>
+            도전과 성공을 반복하며 성취감과 자신감이 쌓입니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>난이도는 아이 수준에 맞게 조금씩 조절해 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-plant-68" class="modal">
+    <a class="modal-backdrop" href="#modal-age-68"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-68">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image-6-1.png" alt="식물기르기">
+        </div>
+        <div class="two-right">
+          <h3>식물기르기</h3>
+          <div class="detail-line"></div>
+          <p>
+            식물 기르기는 아이가 생명의 변화를 관찰하며 책임감을 배우는 놀이입니다. <br><br>
+            물을 주고 성장 과정을 기록하면서 인내심과 관찰력이 함께 자랍니다.<br><br>
+            작은 변화에 기쁨을 느끼며 자연과의 연결감을 경험할 수 있습니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>아이가 직접 기록하도록 유도해 보세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-coding-68" class="modal">
+    <a class="modal-backdrop" href="#modal-age-68"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-68">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image-6-2.jpg" alt="코딩게임">
+        </div>
+        <div class="two-right">
+          <h3>코딩게임</h3>
+          <div class="detail-line"></div>
+          <p>
+            코딩 게임은 규칙과 순서를 이해하며 논리적으로 사고하는 힘을 기르는 놀이입니다. <br><br>
+            문제를 단계별로 해결하는 과정에서 집중력과 사고력이 함께 발달합니다.<br><br>
+            놀이처럼 접근하면 실패에 대한 부담 없이 도전할 수 있습니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>정답보다 과정에 집중해 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-craft-68" class="modal">
+    <a class="modal-backdrop" href="#modal-age-68"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-68">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image (11).png" alt="만들기놀이">
+        </div>
+        <div class="two-right">
+          <h3>만들기 놀이</h3>
+          <div class="detail-line"></div>
+          <p>
+            만들기 놀이는 아이가 아이디어를 직접 구현하며 창의력을 키우는 놀이입니다.<br><br>
+            재료를 선택하고 조합하는 과정에서 계획력과 문제 해결력이 함께 자랍니다.<br><br>
+            완성된 결과물은 성취감으로 이어집니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>완성도보다 아이의 의도를 먼저 들어주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-tradition-9" class="modal">
+    <a class="modal-backdrop" href="#modal-age-9"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-9">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image-9-1.jpg" alt="전래놀이">
+        </div>
+        <div class="two-right">
+          <h3>전래놀이</h3>
+          <div class="detail-line"></div>
+          <p>
+            전래 놀이는 규칙과 약속을 지키며 또래와 소통하는 놀이입니다.<br><br>
+            경쟁과 협력을 동시에 경험하며 사회적 관계를 이해하게 됩니다.<br><br>
+            몸을 움직이며 스트레스를 해소하는 데도 도움이 됩니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>승패보다는 함께 느끼는 즐거움을 강조해 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-escape-9" class="modal">
+    <a class="modal-backdrop" href="#modal-age-9"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-9">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image-9-2.jpg" alt="방탈출">
+        </div>
+        <div class="two-right">
+          <h3>방탈출</h3>
+          <div class="detail-line"></div>
+          <p>
+            방탈출 놀이는 단서를 찾고 문제를 해결하는 사고 중심 놀이입니다.<br><br>
+            논리적 추론과 협업을 통해 목표를 달성하는 경험을 제공합니다.<br><br>
+            집중력과 문제 해결 능력이 자연스럽게 향상됩니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>팀원 간의 역할 분담을 유도해 보세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modal-park-9" class="modal">
+    <a class="modal-backdrop" href="#modal-age-9"></a>
+    <div class="modal-panel modal-panel-wide">
+      <a class="modal-close" href="#modal-age-9">×</a>
+      <div class="two-col">
+        <div class="two-left">
+          <img class="detail-img" src="image/image-9-3.jpg" alt="놀이공원">
+        </div>
+        <div class="two-right">
+          <h3>놀이공원</h3>
+          <div class="detail-line"></div>
+          <p>
+            놀이공원에서는 새로운 자극을 경험하며 도전할 수 있습니다.<br><br>
+            기다림과 선택의 과정을 통해 자기 조절 능력도 함께 발달합니다.<br><br>
+            즐거운 경험 속에서 가족 간의 유대감도 깊어집니다.
+          </p>
+          <p><strong>추천 포인트</strong><br>하루의 흐름을 아이가 스스로 기록할 수 있도록 해주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 풋터 -->
+  <footer class="text-center">
+    <div class="container text-center">
+      <p class="mb-2">
+        <a class="pe-1" href="#"><i class="bi bi-telephone-fill text-black"></i></a>
+        <a class="ps-2" href="#"><i class="bi bi-envelope-at-fill text-black"></i></a>
+      </p>
+      <p><strong>오늘 놀자 !</strong></p>
+      <p class="d-inline-block m-0">010-1234-5678</p>
+      <p class="d-inline-block px-3 m-0">·</p>
+      <p class="d-inline-block m-0">todayplay@todayplay.ac.kr</p>
+      <p class="mt-1 mb-4 text-black-50">
+        Copyright <i class="bi bi-c-circle"></i> 2025 Designed by 조서영
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
