@@ -495,7 +495,7 @@ section{
   background: #fff;
   border: 1px solid rgba(0,0,0,.15);
 
-  font-size: 48px;   /* 🔑 아이콘 크기 */
+  font-size: 48px;
   color: #111;
   text-decoration: none;
 
@@ -512,4 +512,5 @@ section{
 .sns-icon.youtube{ color: #ff0000; }
 .sns-icon.instagram{ color: #e1306c; }
 .sns-icon.blog{ color: #111; }
+
 
