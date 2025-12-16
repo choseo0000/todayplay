@@ -18,27 +18,34 @@
 <body>
 
   <!-- ===== Header / Nav ===== -->
-  <header class="site-header">
-    <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
-      <div class="container-fluid px-4 nav-h">
-        <a class="brand-title" href="index.html">오늘<br>놀자!</a>
+<header class="site-header">
+  <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
+    <div class="container-fluid px-4 nav-h">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
-                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <a class="brand-title" href="index.html">오늘<br>놀자!</a>
 
-        <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">오늘 놀자!</a></li>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">오늘 놀자!</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">웹페이지 소개</a></li>
           <li class="nav-item"><a href="age.html" class="nav-link">오늘 뭐하고 놀까?</a></li>
           <li class="nav-item"><a href="issue.html" class="nav-link">오늘의 놀이 이슈</a></li>
           <li class="nav-item"><a href="community.html" class="nav-link">오늘은 뭘 했냐면</a></li>
         </ul>
       </div>
-    </nav>
-  </header>
 
+    </div>
+  </nav>
+</header>
   <!-- ===== 1. 메인 ===== -->
   <main class="section hero" style="margin-top: 70px;">
     <div class="hero-bg" style="background-image:url('image/image.png');"></div>
@@ -135,4 +142,5 @@
 
 </body>
 </html>
+
 
