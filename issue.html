@@ -15,21 +15,33 @@
   </head>
 
 <body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
-      <div class="container-fluid px-4 nav-h">
-        <a class="brand-title" href="index.html">오늘<br>놀자!</a>
+   <header class="site-header">
+  <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
+    <div class="container-fluid px-4 nav-h">
 
-        <ul class="navbar-nav ms-auto align-items-center">
+      <a class="brand-title" href="index.html">오늘<br>놀자!</a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="index.html" class="nav-link">오늘 놀자!</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">웹페이지 소개</a></li>
           <li class="nav-item"><a href="age.html" class="nav-link">오늘 뭐하고 놀까?</a></li>
-          <li class="nav-item"><a href="issue.html" class="nav-link active" aria-current="page">오늘의 놀이 이슈</a></li>
+          <li class="nav-item"><a href="issue.html" class="nav-link">오늘의 놀이 이슈</a></li>
           <li class="nav-item"><a href="community.html" class="nav-link">오늘은 뭘 했냐면</a></li>
         </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
   <!-- ===== 오늘의 놀이 이슈 ===== -->
   <section id="sec-issue" class="section issue" style="margin-top: 70px;">
@@ -172,3 +184,4 @@
 
 </body>
 </html>
+
